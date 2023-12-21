@@ -24,7 +24,7 @@ const preview = {
   globalTypes: {
     theme: {
       description: 'Functional UI Kit theme',
-      defaultValue: 'light',
+      defaultValue: 'dark',
       toolbar: {
         items: [{ value: 'light', icon: 'sun', title: 'light' }, { value: 'dark', icon: 'moon', title: 'dark' }],
       },

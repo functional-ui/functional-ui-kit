@@ -18,7 +18,7 @@ npm install functional-ui-kit
 ### Setup CSS
 Import the functional-ui-kit CSS file into your project in your css file
 ```css
-@import 'practical-ui-kit/style';
+@import 'functional-ui-kit/style';
 
 html {
   ...
@@ -26,14 +26,14 @@ html {
 you can also import the CSS file directly into your main React App file
 ```js
 import React, { Component } from 'react'
-import 'practical-ui-kit/style';
+import 'functional-ui-kit/style';
 
 class App extends Component {
   ...
 ```
 
 ### Customizing Theme
-You can customize the theme by overriding the CSS variables. You can find the list of variables in the [theme file](/docs/theming--docs)
+You can customize the theme by overriding the CSS variables. You can find the list of variables in the [theme file](https:\/\/github.com/functional-ui/functional-ui-kit/blob/main/src/css/theme-colors.css)
 ```css
 :root {
   --fui-color-brand: var(--fui-color-green-700);
@@ -50,7 +50,7 @@ You can customize the theme by overriding the CSS variables. You can find the li
 You can use the components by importing them into your React App file
 ```js
 import React, { Component } from 'react'
-import { FuiBadge } from 'practical-ui-kit/fui-badge';
+import { FuiBadge } from 'functional-ui-kit/fui-badge';
 
 function App() {
   return (
