@@ -1,0 +1,171 @@
+.fui-button {
+  display: flex;
+  align-items: center;
+  gap: var(--fui-space-md);
+  position: relative;
+  border-radius: var(--fui-border-radius-md);
+  color: inherit;
+}
+
+.fui-button [class*="fui-icon"] {
+  color: inherit;
+}
+
+.fui-button-label-container {
+  width: 100%;
+}
+
+.fui-button--size-small .fui-button-label-container {
+  padding: 0 var(--fui-space-xxs);
+}
+
+.fui-button--size-medium .fui-button-label-container {
+  padding: 0 var(--fui-space-xs);
+}
+
+.fui-button--size-large .fui-button-label-container {
+  padding: 0 var(--fui-space-sm);
+}
+
+.fui-button:after {
+  border-radius: var(--fui-border-radius-md);
+}
+
+.fui-button.fui-interactable:focus-visible {
+  outline-offset: 0em;
+}
+
+.fui-button--size-large {
+  height: var(--fui-control-height-lg);
+  min-width: var(--fui-control-height-lg);
+  padding: 0 var(--fui-space-xlg);
+  font: var(--running-large-bold);
+}
+
+.fui-button--size-medium {
+  padding: 0;
+  font: var(--running-medium-bold);
+}
+
+.fui-button--size-medium:not(.fui-button--hierarchy-tertiary) {
+  height: var(--fui-control-height-md);
+  min-width: var(--fui-control-height-md);
+  padding: 0 var(--fui-space-lg);
+}
+
+.fui-button--size-small {
+  height: var(--fui-control-height-sm);
+  min-width: var(--fui-control-height-sm);
+  padding: 0 var(--fui-space-md);
+  font: var(--running-small-bold);
+  gap: var(--fui-space-xs);
+}
+
+.fui-button--hierarchy-primary {
+  color: var(--fui-disableable-color-foreground-light);
+  border: none;
+}
+
+.fui-button--action-neutral.fui-button--hierarchy-primary {
+  background: var(--fui-disableable-color-button-primary-bg-neutral);
+}
+
+.fui-button--action-success.fui-button--hierarchy-primary {
+  background-color: var(--fui-disableable-color-button-primary-bg-success);
+}
+
+.fui-button--action-destructive.fui-button--hierarchy-primary {
+  background-color: var(--fui-disableable-color-button-primary-bg-destructive);
+}
+
+.fui-button--hierarchy-secondary {
+  background-color: transparent;
+  border: 1px solid;
+}
+
+.fui-button--action-neutral.fui-button--hierarchy-secondary {
+  border-color: var(--fui-disableable-color-button-secondary-border-neutral);
+  color: var(--fui-disableable-color-foreground-primary);
+  background-color: var(--fui-disableable-color-button-secondary-bg-neutral);
+}
+
+.fui-button--action-success.fui-button--hierarchy-secondary {
+  border-color: var(--fui-disableable-color-button-secondary-border-success);
+  color: var(--fui-disableable-color-foreground-success);
+  background-color: var(--fui-disableable-color-button-secondary-bg-success);
+}
+
+.fui-button--action-destructive.fui-button--hierarchy-secondary {
+  border-color: var(--fui-disableable-color-button-secondary-border-destructive);
+  color: var(--fui-disableable-color-foreground-danger);
+  background-color: var(--fui-disableable-color-button-secondary-bg-destructive);
+}
+
+.fui-button--hierarchy-tertiary {
+  border: none;
+  background-color: transparent;
+  padding: 0 var(--fui-space-md);
+}
+
+.fui-button--action-neutral.fui-button--hierarchy-tertiary,
+.fui-button--action-neutral.fui-button--hierarchy-tertiary [class*="fui-icon"] {
+  color: var(--fui-disableable-color-foreground-primary);
+}
+
+.fui-button--action-success.fui-button--hierarchy-tertiary,
+.fui-button--action-success.fui-button--hierarchy-tertiary [class*="fui-icon"] {
+  color: var(--fui-disableable-color-foreground-success);
+}
+
+.fui-button--action-destructive.fui-button--hierarchy-tertiary,
+.fui-button--action-destructive.fui-button--hierarchy-tertiary [class*="fui-icon"] {
+  color: var(--fui-disableable-color-foreground-danger);
+}
+
+.fui-button--hierarchy-tertiary .fui-button__loader {
+  top: 50%;
+  right: -26px;
+  transform: translateY(-50%);
+}
+
+.fui-button__loader {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -6px;
+  right: -6px;
+  box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.01), 0px 3px 2px rgba(0, 0, 0, 0.05), 0px 1px 1px rgba(0, 0, 0, 0.09);
+  border-radius: 50%;
+}
+
+.fui-button__loader::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: conic-gradient(var(--fui-color-brand) 0deg, white 360deg);
+  animation: rotation 400ms infinite linear;
+}
+
+.fui-button__loader::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-359deg);
+  }
+}

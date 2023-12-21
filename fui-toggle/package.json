@@ -1,0 +1,5 @@
+{
+  "main": "../dist/fui-toggle/index.js",
+  "module": "../dist/fui-toggle/index.mjs",
+  "types": "../dist/fui-toggle/index.d.ts"
+}

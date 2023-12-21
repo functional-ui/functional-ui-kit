@@ -1,0 +1,121 @@
+import { Meta, Story } from '@storybook/blocks';
+import { Default as BadgeDefault } from '../components/fui-badge/fui-badge.stories.tsx';
+import { Default as ButtonDefault } from '../components/fui-button/fui-button.stories.tsx';
+import { Default as CheckboxDefault } from '../components/fui-checkbox/fui-checkbox.stories.tsx';
+import { Default as EmptyDefault } from '../components/fui-empty/fui-empty.stories.tsx';
+import { Default as ModalDefault } from '../components/fui-modal/fui-modal.stories.tsx';
+import { Default as NotificationDefault } from '../components/fui-notification/fui-notification.stories.tsx';
+import { Default as PopoverDefault } from '../components/fui-popover/fui-popover.stories.tsx';
+import { Default as RadioDefault } from '../components/fui-radio/fui-radio.stories.tsx';
+import { Default as SelectDefault } from '../components/fui-select/fui-select.stories.tsx';
+import { Success as StatusMessageDefault } from '../components/fui-status-message/fui-status-message.stories.tsx';
+import { Default as StepperDefault } from '../components/fui-stepper/fui-stepper.stories.tsx';
+import { Default as SwitchDefault } from '../components/fui-switch/fui-switch.stories.tsx';
+import { Default as TextInputDefault } from '../components/fui-text-input/fui-text-input.stories.tsx';
+import { Default as ToggleDefault } from '../components/fui-toggle/fui-toggle.stories.tsx';
+import { Default as TooltipDefault } from '../components/fui-tooltip/fui-tooltip.stories.tsx';
+
+<Meta title="Introduction" />
+
+<style>
+ {`
+ .component-example-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--fui-color-badge-neutral-bg);
+  border-radius: var(--fui-border-radius-xlg);
+  height: 200px;
+  flex: 1 0 300px;
+  background-image: radial-gradient(var(--fui-color-badge-neutral-bg) 1px, transparent 0);
+  background-size: 10px 10px;
+  position: relative;
+ }
+
+ .component-example-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--fui-space-md) var(--fui-space-lg);
+  background-color: var(--fui-color-badge-neutral-bg);
+  border-radius: 0 var(--fui-border-radius-md) 0 var(--fui-border-radius-md);
+  font-size: var(--fui-font-size-sm);
+  font-weight: var(--fui-font-weight-bold);
+  color: var(--fui-color-foreground-default);
+ }
+ `}
+</style>
+
+# Welcome to Functional UI Kit
+
+Functional UI Kit is a professionally crafted design system for product design and development teams and individuals. We provide core components you would need in every project, focusing on accessibility, development experience and unified designer-developer experience.
+
+We've made sure that Figma variables and CSS variables work together effortlessly. They share the same names, usage and inheritance structure. This isn't just an extra feature; it's the core approach.
+
+Each Figma variable has a direct counterpart in CSS, so there's no confusion. Your design ideas stay crystal clear as you move into the development phase.
+
+### Components
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--fui-space-xlg)' }}>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Badge</div>
+    <Story of={BadgeDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Button</div>
+    <Story of={ButtonDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Checkbox</div>
+    <Story of={CheckboxDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Empty</div>
+    <Story of={EmptyDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Modal</div>
+    <Story of={ModalDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Notification</div>
+    <div style={{transform: 'scale(0.9)'}}>
+      <Story of={NotificationDefault}></Story>
+    </div>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Popover</div>
+    <Story of={PopoverDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Radio</div>
+    <Story of={RadioDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Select</div>
+    <Story of={SelectDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>StatusMessage</div>
+    <Story of={StatusMessageDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Stepper</div>
+    <Story of={StepperDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Switch</div>
+    <Story of={SwitchDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>TextInput</div>
+    <Story of={TextInputDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Toggle</div>
+    <Story of={ToggleDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Tooltip</div>
+    <Story of={TooltipDefault}></Story>
+  </div>
+</div>

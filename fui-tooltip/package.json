@@ -1,0 +1,5 @@
+{
+  "main": "../dist/fui-tooltip/index.js",
+  "module": "../dist/fui-tooltip/index.mjs",
+  "types": "../dist/fui-tooltip/index.d.ts"
+}

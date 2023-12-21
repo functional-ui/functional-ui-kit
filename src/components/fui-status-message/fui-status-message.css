@@ -1,0 +1,50 @@
+.fui-status-message {
+  font: var(--running-small-regular);
+  display: flex;
+  align-items: center;
+  gap: var(--fui-space-xs);
+  align-self: stretch;
+}
+
+.fui-status-message-success { 
+  color: var(--fui-color-status-success);
+}
+
+.fui-status-message-success [class*="fui-icon"] { 
+  color: var(--fui-color-status-success);
+}
+
+.fui-status-message-attention { 
+  color: var(--fui-color-status-attention);
+}
+
+.fui-status-message-invalid { 
+  color: var(--fui-color-status-danger);
+}
+
+.fui-status-message-invalid [class*="fui-icon"] { 
+  color: var(--fui-color-status-danger);
+}
+
+.fui-status-message-icon-wrapper-invalid {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--fui-radius-round);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--fui-color-status-danger);
+  background-color: var(--fui-color-status-danger-subtle);
+}
+
+.fui-status-message-icon-wrapper-success {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--fui-radius-round);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--fui-color-status-success);
+  background-color: var(--fui-color-status-success-subtle);
+  color: var(--fui-color-status-success);
+}

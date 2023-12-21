@@ -1,0 +1,21 @@
+:root {
+  --fui-font-family: 'Lato', sans-serif;
+  --h1-bold: 700 44px/48px var(--fui-font-family);
+  --h2-bold: 700 38px/42px var(--fui-font-family);
+  --h3-bold: 700 32px/36px var(--fui-font-family);
+  --h4-bold: 700 28px/33px var(--fui-font-family);
+  --h5-bold: 700 24px/28px var(--fui-font-family);
+  --h6-bold: 700 18px/22px var(--fui-font-family);
+  --h1-regular: 44px/48px var(--fui-font-family);
+  --h2-regular: 38px/42px var(--fui-font-family);
+  --h3-regular: 32px/36px var(--fui-font-family);
+  --h4-regular: 28px/33px var(--fui-font-family);
+  --h5-regular: 24px/29px var(--fui-font-family);
+  --h6-regular: 20px/24px var(--fui-font-family);
+  --running-medium-regular: 16px/25px var(--fui-font-family);
+  --running-medium-bold: 700 16px/26px var(--fui-font-family);
+  --running-large-regular: 18px/28px var(--fui-font-family);
+  --running-large-bold: 700 18px/29px var(--fui-font-family);
+  --running-small-regular: 14px/22px var(--fui-font-family);
+  --running-small-bold: 700 14px/24px var(--fui-font-family);
+}

@@ -1,0 +1,25 @@
+:root {
+  --fui-control-height-lg: 44px;
+  --fui-control-height-md: 34px;
+  --fui-control-height-sm: 26px;
+  --fui-radius-lg: 8px;
+  --fui-radius-md: 6px;
+  --fui-radius-round: 1000px;
+  --fui-radius-xlg: 10px;
+  --fui-radius-sm: 4px;
+  --fui-radius-xxlg: 12px;
+  --fui-radius-xs: 2px;
+  --fui-space-lg: 12px;
+  --fui-space-md: 8px;
+  --fui-space-sm: 6px;
+  --fui-space-xlg: 16px;
+  --fui-space-xs: 4px;
+  --fui-space-xxlg: 20px;
+  --fui-space-xxs: 2px;
+  --select-min-width: 150px;
+  --popover-min-width: var(--select-min-width);
+  --fui-zindex-top: 3;
+  --fui-zindex-middle: 2;
+  --fui-zindex-bottom: 1;
+  --fui-zindex-under: -1;
+}

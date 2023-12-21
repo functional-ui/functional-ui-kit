@@ -1,0 +1,39 @@
+.fui-interactable,
+.fui-interactable * {
+  cursor: pointer;
+  position: relative;
+}
+
+.fui-disabled *,
+.fui-disabled {
+  cursor: not-allowed;
+}
+
+[class*="fui"].fui-interactable::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: transparent;
+  pointer-events: none;
+}
+
+[class*="fui"].fui-interactable:hover::after {
+  background-color: var(--fui-color-state-hover);
+}
+
+[class*="fui"].fui-interactable:active::after {
+  background-color: var(--fui-color-state-active);
+}
+
+[class*="fui"]:focus-visible {
+  outline: 2px solid var(--fui-color-state-focus);
+  border-radius: var(--fui-radius-xxlg);
+}
+
+.fui-disabled .fui-interactable::after,
+.fui-disabled.fui-interactable::after {
+  display: none;
+}

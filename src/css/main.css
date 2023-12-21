@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('./global-colors.css');
+@import url('./layout.css');
+@import url('./shape.css');
+@import url('./theme-colors.css');
+@import url('./disableable-colors.css');
+@import url('./text-styles.css');
+@import url('./interactable.css');
+@import url('./effects.css');
+
+@import url('../components/fui-button/fui-button.css');
+@import url('../components/fui-badge/fui-badge.css');
+@import url('../components/fui-empty/fui-empty.css');
+@import url('../components/fui-status-message/fui-status-message.css');
+@import url('../components/fui-popover/fui-popover.css');
+@import url('../components/fui-select/fui-select.css');
+@import url('../components/fui-checkbox/fui-checkbox.css');
+@import url('../components/fui-radio/fui-radio.css');
+@import url('../components/fui-tooltip/fui-tooltip.css');
+@import url('../components/fui-text-input/fui-text-input.css');
+@import url('../components/fui-switch/fui-switch.css');
+@import url('../components/fui-stepper/fui-stepper.css');
+@import url('../components/fui-toggle/fui-toggle.css');
+@import url('../components/fui-notification/fui-notification.css');
+@import url('../components/fui-modal/fui-modal.css');
+
+/* Box sizing rules */
+[class*="fui"],
+[class*="fui"]::before,
+[class*="fui"]::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+h1[class*="fui"],
+h2[class*="fui"],
+h3[class*="fui"],
+h4[class*="fui"],
+p[class*="fui"],
+figure[class*="fui"],
+blockquote[class*="fui"],
+dl[class*="fui"],
+dd[class*="fui"] {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'][class*="fui"],
+ol[role='list'][class*="fui"] {
+  list-style: none;
+}
+
+/* Nicely drawn underlines on links */
+a[class*="fui"] {
+  text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+[class*="fui"],
+input[class*="fui"],
+button[class*="fui"],
+textarea[class*="fui"],
+select[class*="fui"] {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+
+  [class*="fui"],
+  [class*="fui"]::before,
+  [class*="fui"]::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Other general stuff */
+[class*="fui-icon"] {
+  display: block;
+  color: var(--fui-disableable-color-icon);
+}

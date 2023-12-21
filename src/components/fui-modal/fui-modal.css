@@ -1,0 +1,150 @@
+.fui-modal-overlay {
+  position: fixed;
+  inset: 0px;
+  background: var(--fui-color-background-opaque);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fui-modal {
+  display: flex;
+  min-width: 300px;
+  width: fit-content;
+  flex-direction: column;
+  border-radius: var(--fui-radius-xxlg);
+  border: 1px solid var(--fui-color-divider-soft);
+  background: var(--fui-color-background-base);
+  box-shadow: var(--fui-shadow-soft-elevation-2);
+  overflow: hidden;
+  position: relative;
+}
+
+.fui-modal-header {
+  gap: var(--fui-space-lg);
+  align-self: stretch;
+  display: flex;
+  min-height: 66px;
+  padding: var(--fui-space-xxlg);
+  font: var(--h6-bold);
+  color: var(--fui-color-foreground-default);
+  align-items: center;
+}
+
+.fui-modal-header.layout-vertical {
+  padding: calc(var(--fui-space-xlg) + var(--fui-space-lg)) var(--fui-space-xxlg) calc(var(--fui-space-xxlg) + var(--fui-space-md)) var(--fui-space-xxlg);
+  flex-direction: column;
+}
+
+.fui-modal-header-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.fui-modal-header-content-wrapper.layout-vertical {
+  align-items: center;
+  align-self: stretch;
+}
+
+.fui-modal-subtitle {
+  font: var(--running-medium-regular);
+  color: var(--fui-color-foreground-opaque);
+}
+
+.fui-modal-divided .fui-modal-header {
+  border-bottom: 1px solid var(--fui-color-divider-soft);
+  margin-bottom: var(--fui-space-xxlg);
+}
+
+.fui-modal-divided .fui-modal-footer {
+  border-top: 1px solid var(--fui-color-divider-soft);
+  margin-top: var(--fui-space-xxlg);
+}
+
+.fui-modal-footer {
+  justify-content: flex-end;
+  gap: var(--fui-space-lg) var(--fui-space-md);
+  align-self: stretch;
+  flex-wrap: wrap;
+  display: flex;
+  padding: var(--fui-space-xxlg);
+  align-items: center;
+  align-content: center;
+}
+
+.fui-modal-footer.layout-vertical {
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--fui-space-xlg);
+}
+
+.fui-modal-footer-actions {
+  display: flex;
+  gap: var(--fui-space-lg) var(--fui-space-md);
+}
+
+.fui-modal-footer.layout-vertical .fui-modal-footer-actions {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--fui-space-lg);
+  align-self: stretch;
+  width: 100%;
+}
+
+.fui-modal-footer.layout-vertical .fui-modal-footer-actions .fui-button {
+  width: 100%;
+}
+
+.fui-modal-footer-content {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 0 0;
+  font: var(--running-medium-regular);
+  color: var(--fui-color-foreground-opaque);
+}
+
+.fui-modal-dismiss {
+  position: absolute;
+  display: flex;
+  top: var(--fui-space-xxlg);
+  right: var(--fui-space-xxlg);
+  width: var(--fui-control-height-sm);
+  height: var(--fui-control-height-sm);
+  padding: 0px var(--fui-space-xs);
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: all 100ms ease-in;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+
+.ReactModal__Content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 150ms ease-in;
+}
+
+.ReactModal__Content--after-open{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.ReactModal__Content--before-close{
+  transform: translateY(30px);
+  opacity: 0;
+}

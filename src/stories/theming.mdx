@@ -1,0 +1,34 @@
+import { Meta, Story } from '@storybook/blocks';
+import { Default as BadgeDefault } from '../components/fui-badge/fui-badge.stories.tsx';
+
+<Meta title="Theming" />
+
+<style>
+ {`
+
+ `}
+</style>
+
+# Theming
+### Customizing Theme
+You can customize the theme by overriding the CSS variables.
+```css
+:root {
+  --fui-color-brand: var(--fui-color-green-700);
+}
+
+[data-theme="dark"],
+[data-theme="dark"] * {
+  --fui-color-brand: var(--fui-color-green-500);
+}
+...
+```
+
+List of all the variables and their default values (both light and dark theme) can be found in the [theme colors file]().
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--fui-space-xlg)', display: 'none' }}>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Badge</div>
+    <Story of={BadgeDefault}></Story>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+.fui-stepper-wrapper {
+  display: flex;
+  min-height: var(--fui-control-height-md);
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: var(--fui-radius-md);
+}
+
+.fui-stepper-minus-container.fui-interactable::after,
+.fui-stepper-plus-container.fui-interactable::after {
+  width: 22px;
+  height: 22px;
+  top: calc(50% - 11px);
+  left: calc(50% - 11px);
+  border-radius: var(--fui-radius-md);
+}
+
+.fui-stepper-minus-container.fui-interactable:focus-visible,
+.fui-stepper-plus-container.fui-interactable:focus-visible {
+  outline-offset: -6px;
+}
+
+.fui-stepper-label {
+  font: var(--running-medium-bold);
+  color: var(--fui-disableable-color-foreground-default);
+}
+
+.fui-stepper-container {
+  display: flex;
+  height: var(--fui-control-height-md);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--fui-radius-md);
+  border: 1px solid var(--fui-disableable-color-divider-solid);
+  background: var(--fui-disableable-color-background-base);
+  overflow: hidden;
+}
+
+.fui-stepper-minus-container {
+  display: flex;
+  width: var(--fui-control-height-md);
+  height: var(--fui-control-height-md);
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-right: 1px solid var(--fui-disableable-color-divider-solid);
+  position: relative;
+  flex-shrink: 0;
+  background: none;
+}
+
+.fui-stepper-value-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.fui-stepper-input {
+  border: none;
+  text-align: center;
+  font: var(--running-medium-regular);
+  color: var(--fui-disableable-color-foreground-default);
+  background: transparent;
+  width: 100%;
+  line-height: 32px;
+}
+
+.fui-stepper-input:focus-visible {
+  outline: none;
+}
+
+.fui-stepper-input::-webkit-outer-spin-button,
+.fui-stepper-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.fui-stepper-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.fui-stepper-plus-container {
+  display: flex;
+  width: var(--fui-control-height-md);
+  height: var(--fui-control-height-md);
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-left: 1px solid var(--fui-disableable-color-divider-solid);
+  position: relative;
+  flex-shrink: 0;
+  background: none;
+}

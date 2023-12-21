@@ -1,0 +1,9 @@
+.fui-tooltip {
+  background-color: var(--fui-color-background-contrast);
+  border-radius: var(--fui-radius-md);
+  box-shadow: var(--fui-shadow-soft-elevation-0);
+  color: var(--fui-color-foreground-inverted);
+  font: var(--running-medium-bold);
+  padding: var(--fui-space-lg);
+  margin-bottom: var(--fui-space-lg);
+}

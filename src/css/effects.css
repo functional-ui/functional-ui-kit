@@ -1,0 +1,6 @@
+:root {  
+  --fui-shadow-soft-elevation-0: 0px 0px 6px 0px rgba(0, 0, 0, 0.18);
+  --fui-shadow-soft-elevation-1: 0px 0px 10px -2px rgba(0, 0, 0, 0.15);
+  --fui-shadow-soft-elevation-2: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 11px 24px 0px rgba(0, 0, 0, 0.10), 0px 44px 44px 0px rgba(0, 0, 0, 0.09), 0px 99px 59px 0px rgba(0, 0, 0, 0.05), 0px 176px 70px 0px rgba(0, 0, 0, 0.01), 0px 275px 77px 0px rgba(0, 0, 0, 0.00);
+  --fui-shadow-crisp-down: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+}

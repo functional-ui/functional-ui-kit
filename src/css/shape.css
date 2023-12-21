@@ -1,0 +1,9 @@
+:root {
+  --fui-border-radius-round: 1000px;
+  --fui-border-radius-xxlg: 12px;
+  --fui-border-radius-xlg: 10px;
+  --fui-border-radius-lg: 8px;
+  --fui-border-radius-md: 6px;
+  --fui-border-radius-sm: 4px;
+  --fui-border-radius-xs: 2px;
+}

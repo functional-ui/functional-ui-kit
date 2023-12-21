@@ -1,0 +1,69 @@
+import { Meta, Story } from '@storybook/blocks';
+import { Default as BadgeDefault } from '../components/fui-badge/fui-badge.stories.tsx';
+
+<Meta title="Setup" />
+
+<style>
+ {`
+ `}
+</style>
+
+# Setup
+### Install
+Install the latest version from NPM.
+```
+npm install functional-ui-kit
+```
+
+### Setup CSS
+Import the functional-ui-kit CSS file into your project in your css file
+```css
+@import 'practical-ui-kit/style';
+
+html {
+  ...
+```
+you can also import the CSS file directly into your main React App file
+```js
+import React, { Component } from 'react'
+import 'practical-ui-kit/style';
+
+class App extends Component {
+  ...
+```
+
+### Customizing Theme
+You can customize the theme by overriding the CSS variables. You can find the list of variables in the [theme file](/docs/theming--docs)
+```css
+:root {
+  --fui-color-brand: var(--fui-color-green-700);
+}
+
+[data-theme="dark"],
+[data-theme="dark"] * {
+  --fui-color-brand: var(--fui-color-green-500);
+}
+...
+```
+
+### Using Components
+You can use the components by importing them into your React App file
+```js
+import React, { Component } from 'react'
+import { FuiBadge } from 'practical-ui-kit/fui-badge';
+
+function App() {
+  return (
+    <div>
+      <FuiBadge label='label' />
+    </div>
+  );
+}
+```
+
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--fui-space-xlg)', display: 'none' }}>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Badge</div>
+    <Story of={BadgeDefault}></Story>
+  </div>
+</div>

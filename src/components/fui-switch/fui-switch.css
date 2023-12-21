@@ -1,0 +1,87 @@
+.fui-switch {
+  display: flex;
+  padding: var(--fui-space-xxs);
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: var(--fui-radius-round);
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.08, 0.09, 0.15, 1);
+}
+
+.fui-switch-size-small {
+  width: 44px;
+  height: var(--fui-control-height-sm);
+  min-width: 44px;
+  max-width: 44px;
+  min-height: var(--fui-control-height-sm);
+  max-height: var(--fui-control-height-sm);
+}
+
+.fui-switch-size-medium {
+  width: 64px;
+  height: var(--fui-control-height-md);
+  min-width: 64px;
+  max-width: 64px;
+  min-height: var(--fui-control-height-md);
+  max-height: var(--fui-control-height-md);
+}
+
+.fui-switch-off {
+  outline: 1px solid var(--fui-disableable-color-divider-soft);
+  background-color: var(--fui-disableable-color-background-subdued);
+}
+
+.fui-switch-on {
+  background-color: var(--fui-disableable-color-button-primary-bg-neutral);
+  outline: 3px solid var(--fui-disableable-color-background-subdued);
+}
+
+.fui-switch-knob {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--fui-radius-round);
+  background: var(--fui-disableable-color-background-white);
+  position: absolute;
+  transition: right 0.2s cubic-bezier(0.08, 0.09, 0.15, 1), box-shadow 0.2s cubic-bezier(0.08, 0.09, 0.15, 1);
+  box-shadow: -2px 0px 6px -2px rgba(0, 0, 0, 0.12);
+}
+
+.fui-switch.fui-interactable {
+  border-radius: var(--fui-radius-round);
+  overflow: hidden
+}
+
+.fui-switch-size-small .fui-switch-knob {
+  width: 22px;
+  height: 22px;
+  right: calc(100% - 25px);
+}
+
+.fui-switch-size-medium .fui-switch-knob {
+  width: 30px;
+  height: 30px;
+  right: calc(100% - 32px);
+}
+
+.fui-switch-on .fui-switch-knob {
+  box-shadow: -2px 0px 6px -2px rgba(0, 0, 0, 0.20);
+  right: var(--fui-space-xxs);
+}
+
+.fui-switch-off .fui-switch-knob {
+  border: 1px solid var(--fui-disableable-color-divider-soft);
+  box-shadow: 2px 0px 3px -2px rgba(0, 0, 0, 0.10);
+}
+
+.fui-switch-thumb {
+  width: 70%;
+  height: 70%;
+  flex-shrink: 0;
+  border-radius: var(--fui-radius-round);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.00) 50%);
+}

@@ -1,0 +1,87 @@
+.fui-text-input-wrapper {
+  display: flex;
+  min-width: 150px;
+  min-height: var(--fui-control-height-md);
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.fui-text-input-container {
+  display: flex;
+  height: var(--fui-control-height-md);
+  align-items: center;
+  align-self: stretch;
+  border-radius: var(--fui-radius-md);
+  border: 1px solid var(--fui-disableable-color-divider-solid);
+  background: var(--fui-disableable-color-background-base);
+  padding: var(--fui-space-xs);
+  gap: var(--fui-space-xxs);
+}
+
+.fui-text-input-input-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fui-text-input-input-container.has-prefix {
+  padding-left: 0;
+}
+
+.fui-text-input-input-container::after {
+  margin: -1px;
+  border-radius: var(--fui-radius-sm);
+}
+
+.fui-text-input-input {
+  padding: 0 var(--fui-space-md);
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: var(--fui-disableable-color-foreground-default);
+}
+
+.fui-text-input-input:focus-visible {
+  outline: 2px solid;
+  outline-color: var(--fui-color-state-focus);
+  border-radius: var(--fui-radius-xs);
+}
+
+.fui-text-input-input::placeholder {
+  font: var(--running-small-regular);
+  color: var(--fui-disableable-color-foreground-softest);
+}
+
+.fui-text-input-clearable-icon-container {
+  display: flex;
+  width: var(--fui-space-xxlg);
+  height: var(--fui-space-xxlg);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  margin-right: var(--fui-space-xxs);
+}
+
+.fui-text-input-clearable-icon-container::after {
+  border-radius: var(--fui-radius-sm);
+  margin: -1px 0;
+}
+
+.fui-text-input-label {
+  color: var(--fui-color-foreground-soft);
+  font: var(--running-small-bold);
+}
+
+.fui-text-input-suffix {
+  margin-right: var(--fui-space-xs);
+}
+
+.fui-text-input-prefix {
+  margin-left: var(--fui-space-xs);
+}

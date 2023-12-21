@@ -1,0 +1,56 @@
+[class*="fui"] {
+  --fui-disableable-color-background-base: var(--fui-color-background-base);
+  --fui-disableable-color-background-elevated: var(--fui-color-background-elevated);
+  --fui-disableable-color-background-subdued: var(--fui-color-background-subdued);
+  --fui-disableable-color-background-white: var(--fui-color-background-white);
+  --fui-disableable-color-button-primary-bg-destructive: var(--fui-color-button-primary-bg-destructive);
+  --fui-disableable-color-button-primary-bg-neutral: var(--fui-color-brand);
+  --fui-disableable-color-button-primary-bg-success: var(--fui-color-button-primary-bg-success);
+  --fui-disableable-color-button-secondary-bg-destructive: var(--fui-color-button-secondary-bg-destructive);
+  --fui-disableable-color-button-secondary-bg-neutral: var(--fui-color-button-secondary-bg-neutral);
+  --fui-disableable-color-button-secondary-bg-success: var(--fui-color-button-secondary-bg-success);
+  --fui-disableable-color-button-secondary-border-destructive: var(--fui-color-button-secondary-border-destructive);
+  --fui-disableable-color-button-secondary-border-neutral: var(--fui-color-button-secondary-border-neutral);
+  --fui-disableable-color-button-secondary-border-success: var(--fui-color-button-secondary-border-success);
+  --fui-disableable-color-divider-soft: var(--fui-color-divider-soft);
+  --fui-disableable-color-divider-solid: var(--fui-color-divider-solid);
+  --fui-disableable-color-state-active: var(--fui-color-state-active);
+  --fui-disableable-color-state-hover: var(--fui-color-state-hover);
+  --fui-disableable-color-foreground-danger: var(--fui-color-status-danger);
+  --fui-disableable-color-foreground-default: var(--fui-color-foreground-default);
+  --fui-disableable-color-foreground-light: var(--fui-color-foreground-light);
+  --fui-disableable-color-foreground-primary: var(--fui-color-foreground-primary);
+  --fui-disableable-color-foreground-soft: var(--fui-color-foreground-soft);
+  --fui-disableable-color-foreground-softest: var(--fui-color-foreground-softest);
+  --fui-disableable-color-foreground-success: var(--fui-color-status-success);
+  --fui-disableable-color-icon: var(--fui-color-icon);
+}
+
+[class*="fui"].fui-disabled, 
+[class*="fui"].fui-disabled * {
+  --fui-disableable-color-background-base: var(--fui-color-disabled-bg);
+  --fui-disableable-color-background-elevated: var(--fui-color-disabled-bg);
+  --fui-disableable-color-background-subdued: var(--fui-color-disabled-bg);
+  --fui-disableable-color-background-white: var(--fui-color-disabled-bg);
+  --fui-disableable-color-button-primary-bg-destructive: var(--fui-color-disabled-bg);
+  --fui-disableable-color-button-primary-bg-neutral: var(--fui-color-disabled-bg);
+  --fui-disableable-color-button-primary-bg-success: var(--fui-color-disabled-bg);
+  --fui-disableable-color-button-secondary-bg-destructive: var(--fui-color-disabled-bg);
+  --fui-disableable-color-button-secondary-bg-neutral: var(--fui-color-disabled-bg);
+  --fui-disableable-color-button-secondary-bg-success: var(--fui-color-disabled-bg);
+  --fui-disableable-color-button-secondary-border-destructive: #00000000;
+  --fui-disableable-color-button-secondary-border-neutral: #00000000;
+  --fui-disableable-color-button-secondary-border-success: #00000000;
+  --fui-disableable-color-divider-soft: var(--fui-color-disabled-divider);
+  --fui-disableable-color-divider-solid: var(--fui-color-disabled-divider);
+  --fui-disableable-color-state-active: #FFFFFF00;
+  --fui-disableable-color-state-hover: #FFFFFF00;
+  --fui-disableable-color-foreground-danger: var(--fui-color-disabled-text);
+  --fui-disableable-color-foreground-default: var(--fui-color-disabled-text);
+  --fui-disableable-color-foreground-light: var(--fui-color-disabled-text);
+  --fui-disableable-color-foreground-primary: var(--fui-color-disabled-text);
+  --fui-disableable-color-foreground-soft: var(--fui-color-disabled-text);
+  --fui-disableable-color-foreground-softest: var(--fui-color-disabled-text);
+  --fui-disableable-color-foreground-success: var(--fui-color-disabled-text);
+  --fui-disableable-color-icon: var(--fui-color-disabled-text);
+}

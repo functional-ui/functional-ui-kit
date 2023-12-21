@@ -1,0 +1,54 @@
+.fui-badge {
+  display: inline-flex;
+  height: var(--fui-control-height-sm);
+  min-height: var(--fui-control-height-sm);
+  max-height: var(--fui-control-height-sm);
+  padding: 0px var(--fui-space-sm);
+  justify-content: center;
+  align-items: center;
+  gap: var(--fui-space-xs);
+  flex-shrink: 0;
+  border-radius: var(--fui-radius-round);
+  border: 1px solid;
+  font: var(--running-small-bold);
+}
+
+.fui-badge [class*="fui-icon"] {
+  color: inherit;
+}
+
+.fui-badge-color-neutral {
+  border-color: var(--fui-color-badge-neutral-border);
+  color: var(--fui-color-badge-neutral-text);
+  background: var(--fui-color-badge-neutral-bg);
+}
+
+.fui-badge-color-blue {
+  border-color:  var(--fui-color-badge-blue-border);
+  color: var(--fui-color-badge-blue-text);
+  background: var(--fui-color-badge-blue-bg);
+}
+
+.fui-badge-color-red {
+  border-color: var(--fui-color-badge-red-border);
+  color: var(--fui-color-badge-red-text);
+  background: var(--fui-color-badge-red-bg);
+}
+
+.fui-badge-color-yellow {
+  border-color: var(--fui-color-badge-yellow-border);
+  color: var(--fui-color-badge-yellow-text);
+  background: var(--fui-color-badge-yellow-bg);
+}
+
+.fui-badge-color-green {
+  border-color: var(--fui-color-badge-green-border);
+  color: var(--fui-color-badge-green-text);
+  background: var(--fui-color-badge-green-bg);
+}
+
+.fui-badge-color-purple {
+  border-color: var(--fui-color-badge-purple-border);
+  color: var(--fui-color-badge-purple-text);
+  background: var(--fui-color-badge-purple-bg);
+}
