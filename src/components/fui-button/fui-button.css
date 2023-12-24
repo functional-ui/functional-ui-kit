@@ -39,7 +39,7 @@
   height: var(--fui-control-height-lg);
   min-width: var(--fui-control-height-lg);
   padding: 0 var(--fui-space-xlg);
-  font: var(--running-large-bold);
+  font: var(--running-medium-bold);
 }
 
 .fui-button--size-medium {
