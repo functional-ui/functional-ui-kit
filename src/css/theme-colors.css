@@ -121,6 +121,6 @@
   --fui-color-foreground-light: var(--fui-color-neutral-100);
   --fui-color-foreground-opaque: #FFFFFF7F;
   --fui-color-foreground-primary: var(--fui-color-brand);
-  --fui-color-foreground-soft: var(--fui-color-neutral-500);
-  --fui-color-foreground-softest: var(--fui-color-neutral-600);
+  --fui-color-foreground-soft: var(--fui-color-neutral-400);
+  --fui-color-foreground-softest: var(--fui-color-neutral-500);
 }
