@@ -43,7 +43,7 @@
   --fui-color-status-success: var(--fui-color-green-700);
   --fui-color-status-success-subtle: var(--fui-color-green-200);
   --fui-color-state-active: #00000026;
-  --fui-color-state-focus: var(--fui-color-neutral-300);
+  --fui-color-state-focus: var(--fui-color-blue-400);
   --fui-color-state-hover: #00000019;
   --fui-color-surface-base: #FFFFFFFF;
   --fui-color-surface-subdued: var(--fui-color-neutral-100);
@@ -107,7 +107,7 @@
   --fui-color-status-success: var(--fui-color-green-600);
   --fui-color-status-success-subtle: var(--fui-color-green-1000);
   --fui-color-state-active: #FFFFFF26;
-  --fui-color-state-focus: var(--fui-color-neutral-1000);
+  --fui-color-state-focus: var(--fui-color-blue-800);
   --fui-color-state-hover: #FFFFFF19;
   --fui-color-surface-base: var(--fui-color-neutral-900);
   --fui-color-surface-subdued: var(--fui-color-neutral-1000);
