@@ -1,5 +1,4 @@
-.react-tiny-popover-container {
-  z-index: var(--fui-zindex-top);
+.fui-popover-trigger {
 }
 
 .fui-popover {
