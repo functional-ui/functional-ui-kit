@@ -1,9 +1,10 @@
 import React from 'react';
 import { prefix } from '../prefix';
-import { Popover, type PopoverProps } from 'react-tiny-popover';
 import { FuiButton, type FuiButtonProps } from '../fui-button/fui-button';
 import FuiIconX12x12 from '../../icons/fui-icon-x-12x12';
 import classnames from 'classnames';
+import { Popover, PopoverContent, PopoverTrigger } from './popover';
+import { Placement } from '@floating-ui/react';
 
 const compPrefix = `${prefix}-popover`;
 
@@ -21,14 +22,15 @@ interface PopoverFooterConfig {
 
 export type FuiPopoverProps = {
   body: JSX.Element
-
   header?: JSX.Element | PopoverHeaderConfig
-
   footer?: JSX.Element | PopoverFooterConfig
-
   ariaLabel?: string
   className?: string
-} & Omit<PopoverProps, 'content'>;
+  placement?: Placement
+  children: React.ReactNode
+  isOpen: boolean
+  onClickOutside?: () => void
+};
 
 export const FuiPopover = (props: FuiPopoverProps) => {
   const header = React.useMemo(() => {
@@ -77,7 +79,14 @@ export const FuiPopover = (props: FuiPopoverProps) => {
 
   return (
     <div className={props.isOpen ? 'fui-popover' : 'fui-popover fui-popover-is-open'}>
-      <Popover {...props} content={content} />
+      <Popover open={props.isOpen} onOpenChange={props.onClickOutside} placement={props.placement}>
+        <PopoverTrigger asChild={true}>
+          {props.children}
+        </PopoverTrigger>
+        <PopoverContent className="Popover">
+          {content}
+        </PopoverContent>
+      </Popover>
     </div>
   );
 };

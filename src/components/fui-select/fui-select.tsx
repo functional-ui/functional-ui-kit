@@ -202,7 +202,7 @@ const FuiCustomSelect = (props: FuiSingleSelectProps) => {
 
   const menuContent = React.useMemo(() => {
     return (
-      <div className={`${compPrefix}-menu`}>
+      <div className={`${compPrefix}-menu`} style={{ width: `${ref.current?.offsetWidth}px` }}>
         {props.options.map((option, index) => {
           if (isOptionGroup(option)) {
             return (
@@ -217,7 +217,7 @@ const FuiCustomSelect = (props: FuiSingleSelectProps) => {
         )}
       </div>
     );
-  }, [props.options]);
+  }, [props.options, props.value, props.disabled, ref.current?.offsetWidth]);
 
   const customChevronContainerClassNames = classnames(
     `${compPrefix}-custom-chevron-container`,
@@ -233,7 +233,7 @@ const FuiCustomSelect = (props: FuiSingleSelectProps) => {
     <div ref={ref} className={compPrefix}>
       {props.label && <label className={`${compPrefix}-label`}>{props.label}</label>}
       {props.statusMsg && <FuiStatusMessage {...props.statusMsg} />}
-      <FuiPopover onClickOutside={closeMenu} containerStyle={{ top: '2px', width: `${ref.current?.offsetWidth}px` }} positions={['bottom', 'top']} isOpen={isMenuOpen} body={menuContent}>
+      <FuiPopover onClickOutside={closeMenu} placement={'bottom'} isOpen={isMenuOpen} body={menuContent}>
         <div className={containerClassNames}>
           <div style={{ width: '100%', display: 'flex' }}>
             <div className={selectWrapperClassNames}>
@@ -346,7 +346,7 @@ const FuiCustomMultiSelect = (props: FuiMultiSelectProps) => {
 
   const menuContent = React.useMemo(() => {
     return (
-      <div className={`${compPrefix}-menu`}>
+      <div className={`${compPrefix}-menu`} style={{ width: `${ref.current?.offsetWidth}px` }} >
         {props.options.map((option, index) => {
           if (isOptionGroup(option)) {
             return (
@@ -361,7 +361,7 @@ const FuiCustomMultiSelect = (props: FuiMultiSelectProps) => {
         )}
       </div>
     );
-  }, [props.options, props.value, props.disabled]);
+  }, [props.options, props.value, props.disabled, ref.current?.offsetWidth]);
 
   const values = React.useMemo(() => {
     const valueClassNames = classnames(
@@ -415,7 +415,7 @@ const FuiCustomMultiSelect = (props: FuiMultiSelectProps) => {
     <div ref={ref} className={multiSelectClassNames}>
       {props.label && <label className={`${compPrefix}-label`}>{props.label}</label>}
       {props.statusMsg && <FuiStatusMessage {...props.statusMsg} />}
-      <FuiPopover onClickOutside={closeMenu} containerStyle={{ top: '2px', width: `${ref.current?.offsetWidth}px` }} positions={['bottom', 'top']} isOpen={isMenuOpen} body={menuContent}>
+      <FuiPopover onClickOutside={closeMenu} placement={'bottom'} isOpen={isMenuOpen} body={menuContent}>
         <div className={containerClassNames}>
           <div className={`${selectWrapperClassNames} ${props.value.length <= 1 ? `${prefix}-interactable` : ''}`} onClick={() => !props.value.length && toggleMenu()}>
             {props.value.length < 2 ? <div onClick={() => toggleMenu()} className={`${compPrefix}-placeholder`}>{props.placeholder}</div> : null}

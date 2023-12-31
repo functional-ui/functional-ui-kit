@@ -78,10 +78,9 @@ export const Default: Story = {
         <FuiPopover
           {...args}
           isOpen={open}
-          positions={['bottom']}
+          placement={'bottom'}
           onClickOutside={() => { setOpen(false); }}
           body={body}
-          containerStyle={{ top: '2px' }}
         >
           <div >
             <FuiButton onClick={toggleOpen} label='Open Popover' />
@@ -123,7 +122,7 @@ export const DismissibleWithTitle: Story = {
         <FuiPopover
           {...args}
           isOpen={open}
-          positions={['bottom']}
+          placement={'bottom'}
           onClickOutside={() => { setOpen(false); }}
           body={body}
           header={{ titleText: 'Popover Title', dismissible: true, onDismiss: () => { setOpen(false); } }}
@@ -145,7 +144,7 @@ export const DismissibleWithTitle: Story = {
 export const Position: Story = {
   render: (args) => {
     const [open, setOpen] = React.useState(false);
-    const [position, setPosition] = React.useState<FuiPopoverProps['positions']>(['bottom']);
+    const [position, setPosition] = React.useState<FuiPopoverProps['placement']>('bottom');
 
     React.useEffect(() => {
       setOpen(args.isOpen);
@@ -160,16 +159,16 @@ export const Position: Story = {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: 'var(--fui-space-lg)', marginTop: '80px', marginBottom: '80px' }}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 'var(--fui-space-lg)' }}>
-          <FuiRadio checked={position?.includes('bottom')} onClick={() => { setPosition(['bottom']); }} label='Bottom' />
-          <FuiRadio checked={position?.includes('left')} onClick={() => { setPosition(['left']); }} label='Left' />
-          <FuiRadio checked={position?.includes('right')} onClick={() => { setPosition(['right']); }} label='Right' />
-          <FuiRadio checked={position?.includes('top')} onClick={() => { setPosition(['top']); }} label='Top' />
+          <FuiRadio checked={position?.includes('bottom')} onClick={() => { setPosition('bottom'); }} label='Bottom' />
+          <FuiRadio checked={position?.includes('left')} onClick={() => { setPosition('left'); }} label='Left' />
+          <FuiRadio checked={position?.includes('right')} onClick={() => { setPosition('right'); }} label='Right' />
+          <FuiRadio checked={position?.includes('top')} onClick={() => { setPosition('top'); }} label='Top' />
         </div>
         <FuiPopover
           {...args}
           isOpen={open}
           header={{ titleText: 'Popover Title', dismissible: true, onDismiss: () => { setOpen(false); } }}
-          positions={position}
+          placement={position}
           onClickOutside={() => { setOpen(false); }}
           body={body}
         >
@@ -215,7 +214,7 @@ export const Actions: Story = {
           isOpen={open}
           header={{ titleText: 'Popover Title', dismissible: true, onDismiss: () => { setOpen(false); } }}
           onClickOutside={() => { setOpen(false); }}
-          positions={['bottom', 'top']}
+          placement={'bottom'}
           body={body}
           footer={{ primaryAction: { label: 'Submit', actionType: 'neutral', hierarchy: 'primary', size: 'medium', onClick: () => { setOpen(false); } }, secondaryAction: { label: 'Cancel', actionType: 'neutral', hierarchy: 'tertiary', size: 'medium', onClick: () => { setOpen(false); } } }}
         >
