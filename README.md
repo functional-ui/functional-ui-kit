@@ -1,3 +1,5 @@
+![_thumb 1](https://github.com/functional-ui/functional-ui-kit/assets/10652039/3c11275a-9c3f-4bb0-b6fd-779e1bffb220)
+
 # Welcome to Functional UI Kit
 
 Functional UI Kit is a professionally crafted design system for product design and development teams and individuals. We provide core components you would need in every project, focusing on accessibility, development experience and unified designer-developer experience.
