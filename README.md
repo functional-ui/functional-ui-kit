@@ -1,4 +1,4 @@
-![_thumb 1](https://github.com/functional-ui/functional-ui-kit/assets/10652039/3c11275a-9c3f-4bb0-b6fd-779e1bffb220)
+<img src="https://github.com/functional-ui/functional-ui-kit/assets/10652039/3c11275a-9c3f-4bb0-b6fd-779e1bffb220" width=100%>
 
 # Welcome to Functional UI Kit
 
