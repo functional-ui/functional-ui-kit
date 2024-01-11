@@ -12,6 +12,7 @@
 .fui-radio.fui-focused {
   outline: 2px solid;
   outline-color: var(--fui-color-state-focus);
+  color: var(--fui-color-state-focus);
   outline-offset: 0.2em;
 }
 

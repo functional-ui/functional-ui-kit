@@ -37,8 +37,9 @@
   border: 0;
   height: calc(var(--fui-control-height-md) - 2px);
   width: 100%;
-  color: inherit;
+  color: var(--fui-disableable-color-foreground-default);
   font: inherit;
+  background-color: var(--fui-disableable-color-background-base);
 }
 
 
@@ -200,6 +201,7 @@
 .fui-select-menu-option-label {
   display: flex;
   flex: 1 0 0;
+  color: var(--fui-disableable-color-foreground-default);
 }
 
 .fui-select-value {

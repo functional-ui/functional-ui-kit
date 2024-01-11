@@ -24,7 +24,7 @@ import { Default as TooltipDefault } from '../components/fui-tooltip/fui-tooltip
   justify-content: center;
   align-items: center;
   border: 1px solid var(--fui-color-badge-neutral-bg);
-  border-radius: var(--fui-border-radius-xlg);
+  border-radius: var(--fui-border-radius-md);
   height: 200px;
   flex: 1 0 300px;
   background-image: radial-gradient(var(--fui-color-badge-neutral-bg) 1px, transparent 0);
@@ -38,24 +38,24 @@ import { Default as TooltipDefault } from '../components/fui-tooltip/fui-tooltip
   right: 0;
   padding: var(--fui-space-md) var(--fui-space-lg);
   background-color: var(--fui-color-badge-neutral-bg);
-  border-radius: 0 var(--fui-border-radius-md) 0 var(--fui-border-radius-md);
-  font-size: var(--fui-font-size-sm);
-  font-weight: var(--fui-font-weight-bold);
+  border-radius: 0 var(--fui-border-radius-sm) 0 var(--fui-border-radius-sm);
+  font: var(--running-small-regular);
   color: var(--fui-color-foreground-default);
  }
  `}
 </style>
 
+<div style={{ padding: '20px'}}>
 # Welcome to Functional UI Kit
+  <p style={{opacity: '0.7'}}>
+    Functional UI Kit is a professionally crafted design system for product design and development teams and individuals. We provide core components you would need in every project, focusing on accessibility, development experience and unified designer-developer experience.
 
-Functional UI Kit is a professionally crafted design system for product design and development teams and individuals. We provide core components you would need in every project, focusing on accessibility, development experience and unified designer-developer experience.
+    We've made sure that Figma variables and CSS variables work together effortlessly. They share the same names, usage and inheritance structure. This isn't just an extra feature; it's the core approach.
 
-We've made sure that Figma variables and CSS variables work together effortlessly. They share the same names, usage and inheritance structure. This isn't just an extra feature; it's the core approach.
-
-Each Figma variable has a direct counterpart in CSS, so there's no confusion. Your design ideas stay crystal clear as you move into the development phase.
-
-### Components
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--fui-space-xlg)' }}>
+    Each Figma variable has a direct counterpart in CSS, so there's no confusion. Your design ideas stay crystal clear as you move into the development phase.
+  </p>
+</div>
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--fui-space-xlg)'}}>
   <div className='component-example-wrapper'>
     <div className='component-example-label'>Badge</div>
     <Story of={BadgeDefault}></Story>
@@ -77,10 +77,8 @@ Each Figma variable has a direct counterpart in CSS, so there's no confusion. Yo
     <Story of={ModalDefault}></Story>
   </div>
   <div className='component-example-wrapper'>
-    <div className='component-example-label'>Notification</div>
-    <div style={{transform: 'scale(0.9)'}}>
-      <Story of={NotificationDefault}></Story>
-    </div>
+    <div className='component-example-label'>Tooltip</div>
+    <Story of={TooltipDefault}></Story>
   </div>
   <div className='component-example-wrapper'>
     <div className='component-example-label'>Popover</div>
@@ -115,7 +113,9 @@ Each Figma variable has a direct counterpart in CSS, so there's no confusion. Yo
     <Story of={ToggleDefault}></Story>
   </div>
   <div className='component-example-wrapper'>
-    <div className='component-example-label'>Tooltip</div>
-    <Story of={TooltipDefault}></Story>
+    <div className='component-example-label'>Notification</div>
+      <div style={{transform: 'scale(0.9)'}}>
+      <Story of={NotificationDefault}></Story>
+    </div>
   </div>
 </div>

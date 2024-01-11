@@ -28,8 +28,8 @@ export const FuiRadio = (props: FuiRadioProps) => {
     {
       [`${prefix}-interactable`]: !props.disabled,
       [`${prefix}-disabled`]: props.disabled,
-      [`${prefix}-focused`]: focused,
-    },
+      [`${prefix}-focused`]: focused
+    }
   );
 
   const onClick = () => {
@@ -48,7 +48,7 @@ export const FuiRadio = (props: FuiRadioProps) => {
   return (
     <div aria-label={props.ariaLabel} role='radio' className={classNames} onClick={onClick}>
       <div role='radio' className={indicatorClassNames} onClick={onClick}>
-        <input onKeyDown={onSpace} onBlur={() => setFocused(false)} onFocus={() => setFocused(true)} disabled={props.disabled} onChange={props.onClick} ref={ref} type='radio' style={{ height: 0 }} />
+        <input onKeyDown={onSpace} onBlur={() => { setFocused(false); }} onFocus={() => { setFocused(true); }} disabled={props.disabled} onChange={props.onClick} ref={ref} type='radio' style={{ height: 0 }} />
       </div>
       {props.label && <span className={`${compPrefix}-label`}>
         {props.label}

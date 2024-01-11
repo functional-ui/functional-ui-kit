@@ -30,7 +30,8 @@
 
 [class*="fui"]:focus-visible {
   outline: 2px solid var(--fui-color-state-focus);
-  border-radius: var(--fui-radius-xxlg);
+  outline-offset: 0.1em;
+  border-radius: var(--fui-radius-sm);
 }
 
 .fui-disabled .fui-interactable::after,
