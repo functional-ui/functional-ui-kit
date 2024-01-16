@@ -28,6 +28,7 @@ const preview = {
       toolbar: {
         items: [{ value: 'light', icon: 'sun', title: 'light' }, { value: 'dark', icon: 'moon', title: 'dark' }],
       },
+      
     },
   },
 
