@@ -23,7 +23,6 @@ export default create({
   barSelectedColor: "rgba(53, 84, 206, 0.1)",
   barBg: "#F0F4FF",
   buttonBg: "#2856E0",
-  buttonBg: "#2856E0",
   booleanBg: "#F0F4FF",
   booleanSelectedBg: "#2856E0",
   inputBg: "#F5F6F9",
