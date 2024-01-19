@@ -135,6 +135,7 @@
 .fui-select-custom-chevron-container {
   display: flex;
   width: 34px;
+  flex-shrink: 0;
   min-height: calc(var(--fui-control-height-md) - 2px);
   justify-content: center;
   align-items: center;
