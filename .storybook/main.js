@@ -1,6 +1,6 @@
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
-  addons: ["@storybook/manager-api, @storybook/theming, @storybook/addon-links", "@storybook/addon-essentials", "@storybook/addon-interactions", "@storybook/addon-mdx-gfm", '@storybook/addon-toolbars', '@storybook/addon-designs'],
+  addons: ["@storybook/manager-api, @storybook/theming, @storybook/addon-links", "@storybook/addon-essentials", "@storybook/addon-interactions", "@storybook/addon-mdx-gfm", '@storybook/addon-toolbars', '@storybook/addon-designs', 'storybook-dark-mode'],
   framework: {
     name: "@storybook/react-webpack5",
     options: {}

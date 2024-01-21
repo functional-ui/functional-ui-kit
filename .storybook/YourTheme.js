@@ -1,5 +1,4 @@
 import { create } from '@storybook/theming/create';
-const getCssVarStringValue = (varName) => getComputedStyle(document.documentElement).getPropertyValue(varName);
 import logoUrl from './sb-logo.png';
 
 export default create({

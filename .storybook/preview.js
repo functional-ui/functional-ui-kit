@@ -1,8 +1,21 @@
 import '../src/css/main.css';
 import { themes } from '@storybook/theming';
+import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
+import React from 'react';
+import { addons } from '@storybook/preview-api';
+import { DocsContainer } from './docs-container';
 
-const withThemeProvider = (Story, context) => {
-  document.body.setAttribute('data-theme', context.globals.theme);
+const channel = addons.getChannel();
+
+const withThemeProvider = (Story) => {
+  const [isDark, setDark] = React.useState(false);
+
+  React.useEffect(() => {
+    channel.on(DARK_MODE_EVENT_NAME, setDark);
+    return () => channel.off(DARK_MODE_EVENT_NAME, setDark);
+  }, [channel, setDark]);
+
+  document.body.setAttribute('data-theme', isDark ? 'dark' : 'light');
   return Story();
 };
 
@@ -18,20 +31,9 @@ const preview = {
       },
     },
     docs: {
-      theme: themes.dark,
-    }, 
-  },
-  globalTypes: {
-    theme: {
-      description: 'Functional UI Kit theme',
-      defaultValue: 'dark',
-      toolbar: {
-        items: [{ value: 'light', icon: 'sun', title: 'light' }, { value: 'dark', icon: 'moon', title: 'dark' }],
-      },
-      
+      container: DocsContainer,
     },
   },
-
 };
 
 export default preview;
