@@ -8,7 +8,6 @@ import { Meta, Story } from '@storybook/blocks';
     display: grid;
     grid-template-columns: 36px repeat(7, 60px);
     grid-template-rows: repeat(21, 36px);
-    color: var(--fui-color-foreground-default);
     grid-gap: 3px;
     justify-content: center;
   }
@@ -45,16 +44,16 @@ import { Meta, Story } from '@storybook/blocks';
   `}
 </style>
 
-<div data-theme='dark' className='container'>
-  <div className='color-title'></div>
-  <div className='color-title'>Neutral</div>
-  <div className='color-title'>Blue</div>
-  <div className='color-title'>Purple</div>
-  <div className='color-title'>Yellow</div>
-  <div className='color-title'>Brown</div>
-  <div className='color-title'>Green</div>
-  <div className='color-title'>Red</div>
-  <div className='color-title'>50</div>
+<div className='container'>
+  <p className='color-title'></p>
+  <p className='color-title'>Neutral</p>
+  <p className='color-title'>Blue</p>
+  <p className='color-title'>Purple</p>
+  <p className='color-title'>Yellow</p>
+  <p className='color-title'>Brown</p>
+  <p className='color-title'>Green</p>
+  <p className='color-title'>Red</p>
+  <p className='color-title'>50</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box' style={{ backgroundColor: 'var(--fui-color-neutral-50)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-50)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-50)' }}></div>
@@ -62,7 +61,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-50)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-50)' }}></div>
-  <div className='color-title'>100</div>
+  <p className='color-title'>100</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-neutral-100)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-100)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-100)' }}></div>
@@ -70,7 +69,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-100)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-100)' }}></div>
-  <div className='color-title'>150</div>
+  <p className='color-title'>150</p>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
@@ -78,7 +77,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
-  <div className='color-title'>200</div>
+  <p className='color-title'>200</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-neutral-200)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-200)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-200)' }}></div>
@@ -86,7 +85,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-200)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-200)' }}></div>
-  <div className='color-title'>250</div>
+  <p className='color-title'>250</p>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
@@ -94,7 +93,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
-  <div className='color-title'>300</div>
+  <p className='color-title'>300</p>
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-300)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-300)' }}></div>
@@ -102,7 +101,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-300)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-300)' }}></div>
-  <div className='color-title'>350</div>
+  <p className='color-title'>350</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-neutral-350)' }}></div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
@@ -110,7 +109,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
-  <div className='color-title'>400</div>
+  <p className='color-title'>400</p>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
@@ -118,7 +117,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
-  <div className='color-title'>450</div>
+  <p className='color-title'>450</p>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
@@ -126,7 +125,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
-  <div className='color-title'>500</div>
+  <p className='color-title'>500</p>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
@@ -134,7 +133,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
-  <div className='color-title'>550</div>
+  <p className='color-title'>550</p>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
@@ -142,7 +141,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
-  <div className='color-title'>600</div>
+  <p className='color-title'>600</p>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
@@ -150,7 +149,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-600)' }}></div>
   <div className='empty-box'>Free Slot</div>
-  <div className='color-title'>650</div>
+  <p className='color-title'>650</p>
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-650)' }}></div>
   <div className='empty-box'>Free Slot</div>
@@ -158,7 +157,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-650)' }}></div>
-  <div className='color-title'>700</div>
+  <p className='color-title'>700</p>
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-700)' }}></div>
@@ -166,7 +165,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-brown-700)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-700)' }}></div>
   <div className='empty-box'>Free Slot</div>
-  <div className='color-title'>750</div>
+  <p className='color-title'>750</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-neutral-750)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-750)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-750)' }}></div>
@@ -174,7 +173,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div className='empty-box'>Free Slot</div>
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-750)' }}></div>
-  <div className='color-title'>800</div>
+  <p className='color-title'>800</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-neutral-800)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-800)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-800)' }}></div>
@@ -182,7 +181,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-brown-800)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-800)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-800)' }}></div>
-  <div className='color-title'>850</div>
+  <p className='color-title'>850</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-neutral-850)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-850)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-850)' }}></div>
@@ -190,7 +189,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-brown-850)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-850)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-850)' }}></div>
-  <div className='color-title'>900</div>
+  <p className='color-title'>900</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-neutral-900)' }}></div>
   <div className='empty-box'>Free Slot</div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-900)' }}></div>
@@ -198,7 +197,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-brown-900)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-900)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-900)' }}></div>
-  <div className='color-title'>950</div>
+  <p className='color-title'>950</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-neutral-950)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-950)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-purple-950)' }}></div>
@@ -206,7 +205,7 @@ import { Meta, Story } from '@storybook/blocks';
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-brown-950)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-green-950)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-red-950)' }}></div>
-  <div className='color-title'>1000</div>
+  <p className='color-title'>1000</p>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-neutral-1000)' }}></div>
   <div onClick={(e) => navigator.clipboard.writeText(e.target.className.includes('color-box') ? e.target.style.backgroundColor : e.target.parentElement.style.backgroundColor)} className='color-box'style={{ backgroundColor: 'var(--fui-color-blue-1000)' }}></div>
   <div className='empty-box'>Free Slot</div>
