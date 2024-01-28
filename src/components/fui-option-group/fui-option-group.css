@@ -41,3 +41,9 @@
   font: var(--running-small-bold);
   color: var(--fui-color-foreground-softest);
 }
+
+.fui-option-group-menu-option-label {
+  display: flex;
+  flex: 1 0 0;
+  color: var(--fui-disableable-color-foreground-default);
+}
