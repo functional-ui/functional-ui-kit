@@ -24,6 +24,7 @@
 @import url('../components/fui-toggle/fui-toggle.css');
 @import url('../components/fui-notification/fui-notification.css');
 @import url('../components/fui-modal/fui-modal.css');
+@import url('../components/fui-option-group/fui-option-group.css');
 
 /* Box sizing rules */
 [class*="fui"],

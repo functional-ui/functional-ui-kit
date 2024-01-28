@@ -22,6 +22,7 @@ export default defineConfig({
         'fui-empty': resolve(__dirname, 'src/components/fui-empty/fui-empty.tsx'),
         'fui-notification': resolve(__dirname, 'src/components/fui-notification/fui-notification.tsx'),
         'fui-modal': resolve(__dirname, 'src/components/fui-modal/fui-modal.tsx'),
+        'fui-option-group': resolve(__dirname, 'src/components/fui-option-group/fui-option-group.tsx'),
       },
       fileName: '[name]/index',
       formats: ['es', 'cjs'],
