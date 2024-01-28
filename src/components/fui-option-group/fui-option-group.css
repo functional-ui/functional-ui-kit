@@ -1,0 +1,43 @@
+.fui-option-group .fui-option-group-menu-option::after {
+  border-radius: var(--fui-radius-sm);
+  width: calc(100% + var(--fui-space-lg));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fui-option-group {
+  border-radius: var(--fui-radius-lg);
+  border: 1px solid var(--fui-color-divider-soft);
+  display: flex;
+  padding: var(--fui-space-lg) var(--fui-space-xlg);
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--fui-color-background-base);
+}
+
+.fui-option-group-menu-option {
+  display: flex;
+  height: 38px;
+  gap: var(--fui-space-sm);
+  align-items: center;
+  align-self: stretch;
+  font: var(--running-small-bold);
+  position: relative;
+}
+
+.fui-option-group-menu-group {
+  display: flex;
+  flex-direction: column;
+  min-height: 38px;
+  align-self: stretch;
+  margin-bottom: var(--fui-space-md);
+}
+
+.fui-option-group-menu-group:last-child {
+  margin-bottom: 0;
+}
+
+.fui-option-group-menu-group-label {
+  font: var(--running-small-bold);
+  color: var(--fui-color-foreground-softest);
+}
