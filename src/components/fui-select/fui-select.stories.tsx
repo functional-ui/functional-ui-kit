@@ -12,6 +12,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2574-19579&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Help people choose single or multiple values from a set of options. Consider select when you have 5 or more options. As an alternative, radio buttons or checkboxes can make the interface cleaner and more accessible.'
+      }
     }
   },
   argTypes: {

@@ -11,6 +11,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2574-19579&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Embed this component within other components such as Popover or Select to showcase a configurable grouped list of list items or options. Each option can be individually configured, and the grouping allows for versatile customization.'
+      }
     }
   },
   argTypes: {

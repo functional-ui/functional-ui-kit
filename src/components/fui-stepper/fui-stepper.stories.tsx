@@ -11,6 +11,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2511-80120&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Help people make small numeric changes by pressing buttons or typing numbers. The input is also editable for larger value changes since people can directly edit the input field.'
+      }
     }
   },
   argTypes: {

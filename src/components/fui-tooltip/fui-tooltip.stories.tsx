@@ -13,6 +13,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2542-48551&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Offer concise feedback to inform people about the outcomes of actions or provide brief information about interface components when their cursor interacts with them. Prioritize the specific control, use action-oriented language, and keep the messages brief. Tooltips visually stand out by using contrasting colors with the theme interface.'
+      }
     }
   },
   argTypes: {

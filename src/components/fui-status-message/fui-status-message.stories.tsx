@@ -10,6 +10,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2511-43025&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Offer inline feedback for one of three status types. It is most effective in compact spaces, alongside form controls, or within inline text.'
+      }
     }
   },
   argTypes: {

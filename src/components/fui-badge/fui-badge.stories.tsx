@@ -12,6 +12,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2461-2893'
+    },
+    docs: {
+      description: {
+        component: 'Assist people to quickly grasp information, status & classification. Provide feedback, and establish trust and security.'
+      }
     }
   },
   argTypes: {

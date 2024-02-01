@@ -11,6 +11,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2461-15311'
+    },
+    docs: {
+      description: {
+        component: 'Checkboxes allow people to select multiple options or toggle a single choice. For single selections, consider radio buttons or drop-downs. Note that checkboxes require a submission step, while switches offer real-time interaction.'
+      }
     }
   },
   argTypes: {

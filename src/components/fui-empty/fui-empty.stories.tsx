@@ -12,6 +12,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2464-16262'
+    },
+    docs: {
+      description: {
+        component: 'Guide people in the absence of content, reducing confusion, encouraging actions, reinforcing branding, and offering friendly tips or tutorials to help people navigate new situations or create content when no data is available.'
+      }
     }
   },
   argTypes: {

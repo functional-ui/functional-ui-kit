@@ -11,6 +11,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2511-14321&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Confirm actions, update people about timely events and provide status updates for processes. When providing an action, opt for non-destructive actions and clear distinctions for destructive ones. The information in notifications is valuable but not critical, aiming for quick and concise updates that people can grasp at a glance.'
+      }
     }
   },
   tags: ['autodocs'],

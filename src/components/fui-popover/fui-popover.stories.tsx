@@ -15,6 +15,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=3079-28605&mode=dev'
+    },
+    docs: {
+      description: {
+        component: 'Help people conveniently access functionality or info. Popover is a modular element that appears above other content when triggered. Should ideally not obstruct the element that triggered them or essential content. Including a Close button is recommended for clarity, but a Popover often closes by clicking outside or selecting an item within. Should not be obscured by other elements, except for alerts. Avoid making a Popover too big.'
+      }
     }
   },
   argTypes: {

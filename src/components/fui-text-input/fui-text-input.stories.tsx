@@ -12,6 +12,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2547-68586&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Request a small amount of textual information from people, such as a name or an email address. Display a label above the text field to help communicate its purpose. To the extent possible, match the size of a text field to the quantity of anticipated text. Use status to validate fields when it makes sense.'
+      }
     }
   },
   argTypes: {

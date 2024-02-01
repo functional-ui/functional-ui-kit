@@ -12,6 +12,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2541-41544&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Help people navigate between mutually exclusive panes of content in the same view or toggle between two or more configurations.'
+      }
     }
   },
   argTypes: {

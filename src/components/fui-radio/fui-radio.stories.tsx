@@ -11,6 +11,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2511-73454&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Radio groups are best for selecting a single option from a short list, while Selects are less efficient due to multiple interactions and hidden options. Radio buttons are preferable for lists of around ten or fewer options, as they require just one quick interaction and ensure all choices are visible and easily comparable. If there isn’t enough space, try a a select instead.'
+      }
     }
   },
   argTypes: {

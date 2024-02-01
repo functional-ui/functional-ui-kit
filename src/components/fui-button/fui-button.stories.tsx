@@ -12,6 +12,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2422-37274'
+    },
+    docs: {
+      description: {
+        component: "These button styles are well-known, user-friendly, and feature a distinct visual hierarchy that doesn't rely solely on color. Show people how significant actions are by setting: primary, secondary or tertiary hierarchy. You might also need varying button sizes, depending on the interface's complexity. Use actionType to provide feedback about the outcome of actions."
+      }
     }
   },
   argTypes: {

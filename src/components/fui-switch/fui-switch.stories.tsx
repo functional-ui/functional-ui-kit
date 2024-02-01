@@ -11,6 +11,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2540-39847&mode=design&t=jq0JgMhh6dwhuYIm-4'
+    },
+    docs: {
+      description: {
+        component: 'Help people choose between two opposing values. Use for options with immediate effects with clear identification through context or labels if needed. Switch has more visual weight than a checkbox, so it looks better when it controls more functionality, so avoid employing it for minor settings.'
+      }
     }
   },
   argTypes: {

@@ -16,6 +16,11 @@ const meta = {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2465-46880'
+    },
+    docs: {
+      description: {
+        component: 'Present content in a distinct, focused mode, keeping people from interacting with the main view until they intentionally dismiss the modal. Modals can help people to: Receive critical information and, if necessary, act on it. Provide options to confirm or modify their most recent action. Perform a distinct, narrowly scoped task without losing track of their previous context. Focus on a complex task.'
+      }
     }
   },
   argTypes: {
