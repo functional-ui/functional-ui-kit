@@ -1,33 +1,94 @@
 import { Meta, Story } from '@storybook/blocks';
 import { Default as BadgeDefault } from '../components/fui-badge/fui-badge.stories.tsx';
+import { Default as ButtonDefault } from '../components/fui-button/fui-button.stories.tsx';
 
 <Meta title="Theming" />
 
 <style>
  {`
+.component-example-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--fui-color-background-subdued);
+  border-radius: var(--fui-border-radius-md);
+  height: 200px;
+  flex: 1 0 300px;
+  background-image: radial-gradient(var(--fui-color-background-subdued) 1px, transparent 0);
+  background-size: 10px 10px;
+  position: relative;
+ }
 
+ .component-example-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--fui-space-md) var(--fui-space-lg);
+  background-color: var(--fui-color-background-subdued);
+  border-radius: 0 var(--fui-border-radius-sm) 0 var(--fui-border-radius-sm);
+  font: var(--running-small-regular);
+  color: var(--fui-color-foreground-default);
+ }
+
+  .themed {
+    --fui-color-badge-blue-bg: var(--fui-color-blue-50);
+    --fui-color-badge-blue-border: var(--fui-color-blue-950);
+    --fui-color-badge-blue-text: var(--fui-color-blue-950);
+    --fui-color-brand: var(--fui-color-purple-700);
+    --fui-control-height-md: 40px;
+    --fui-border-radius-md: 20px;
+  }
+  
+  [data-theme="dark"] .themed,
+  [data-theme="dark"] .themed * {
+    --fui-color-badge-blue-bg: var(--fui-color-blue-850);
+    --fui-color-badge-blue-border: var(--fui-color-blue-300);
+    --fui-color-badge-blue-text: var(--fui-color-blue-300);
+    --fui-color-brand: var(--fui-color-purple-300);
+  }
  `}
 </style>
 
 ### Customizing Theme
-You can customize the theme by overriding the CSS variables.
+Theme FUI colors by overriding CSS variables.
+The variables operate on an inheritance model, ensuring a cohesive organizational structure. Overriding one variable will have consequences on other variables.
+
+We recommend concentrating on [Theme Color variables](https://github.com/functional-ui/functional-ui-kit/blob/main/src/css/theme-colors.css), [Global Color variables](https://github.com/functional-ui/functional-ui-kit/blob/main/src/css/global-colors.css) and [Layout variables](https://github.com/functional-ui/functional-ui-kit/blob/main/src/css/layout.css) for effective theming:
 ```css
 :root {
-  --fui-color-brand: var(--fui-color-green-700);
+  --fui-color-badge-blue-bg: var(--fui-color-green-50);
+  --fui-color-badge-blue-text: var(--fui-color-green-950);
+  --fui-color-badge-blue-border: var(--fui-color-green-950);
+  --fui-color-brand: var(--fui-color-purple-700);
+  --fui-control-height-md: 40px;
+  --fui-border-radius-md: 20px;
 }
 
 [data-theme="dark"],
 [data-theme="dark"] * {
-  --fui-color-brand: var(--fui-color-green-500);
+  --fui-color-badge-blue-bg: var(--fui-color-green-850);
+  --fui-color-badge-blue-text: var(--fui-color-green-300);
+  --fui-color-badge-blue-border: var(--fui-color-green-300);
+  --fui-color-brand: var(--fui-color-purple-300);
 }
 ...
 ```
 
-List of all the variables and their default values (both light and dark theme) can be found in the [theme colors file]().
-
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--fui-space-xlg)', display: 'none' }}>
+<div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--fui-space-xlg)'}}>
   <div className='component-example-wrapper'>
     <div className='component-example-label'>Badge</div>
     <Story of={BadgeDefault}></Story>
+  </div>
+  <div className='component-example-wrapper themed'>
+    <div className='component-example-label'>Themed Badge</div>
+    <Story of={BadgeDefault}></Story>
+  </div>
+  <div className='component-example-wrapper'>
+    <div className='component-example-label'>Button</div>
+    <Story of={ButtonDefault}></Story>
+  </div>
+  <div className='component-example-wrapper themed'>
+    <div className='component-example-label'>Themed Button</div>
+    <Story of={ButtonDefault}></Story>
   </div>
 </div>

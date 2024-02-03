@@ -31,20 +31,6 @@ class App extends Component {
   ...
 ```
 
-### Customizing Theme
-You can customize the theme by overriding the CSS variables. You can find the list of variables in the [theme file](https:\/\/github.com/functional-ui/functional-ui-kit/blob/main/src/css/theme-colors.css)
-```css
-:root {
-  --fui-color-brand: var(--fui-color-green-700);
-}
-
-[data-theme="dark"],
-[data-theme="dark"] * {
-  --fui-color-brand: var(--fui-color-green-500);
-}
-...
-```
-
 ### Using Components
 You can use the components by importing them into your React App file
 ```js
@@ -59,10 +45,3 @@ function App() {
   );
 }
 ```
-
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--fui-space-xlg)', display: 'none' }}>
-  <div className='component-example-wrapper'>
-    <div className='component-example-label'>Badge</div>
-    <Story of={BadgeDefault}></Story>
-  </div>
-</div>
