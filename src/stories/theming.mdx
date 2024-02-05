@@ -11,7 +11,7 @@ import { Default as ButtonDefault } from '../components/fui-button/fui-button.st
   justify-content: center;
   align-items: center;
   border: 1px solid var(--fui-color-background-subdued);
-  border-radius: var(--fui-border-radius-md);
+  border-radius: 4px;
   height: 200px;
   flex: 1 0 300px;
   background-image: radial-gradient(var(--fui-color-background-subdued) 1px, transparent 0);
@@ -51,6 +51,7 @@ import { Default as ButtonDefault } from '../components/fui-button/fui-button.st
 
 ### Customizing Theme
 Theme FUI colors by overriding CSS variables.
+Make sure you are overriding the CSS variables only after importing FUI's styles.
 The variables operate on an inheritance model, ensuring a cohesive organizational structure. Overriding one variable will have consequences on other variables.
 
 We recommend concentrating on [Theme Color variables](https://github.com/functional-ui/functional-ui-kit/blob/main/src/css/theme-colors.css), [Global Color variables](https://github.com/functional-ui/functional-ui-kit/blob/main/src/css/global-colors.css) and [Layout variables](https://github.com/functional-ui/functional-ui-kit/blob/main/src/css/layout.css) for effective theming:
