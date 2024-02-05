@@ -10,11 +10,11 @@ import { Default as ButtonDefault } from '../components/fui-button/fui-button.st
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--fui-color-background-subdued);
+  border: 1px solid var(--fui-color-badge-neutral-bg);
   border-radius: 4px;
   height: 200px;
   flex: 1 0 300px;
-  background-image: radial-gradient(var(--fui-color-background-subdued) 1px, transparent 0);
+  background-image: radial-gradient(var(--fui-color-badge-neutral-bg) 1px, transparent 0);
   background-size: 10px 10px;
   position: relative;
  }
@@ -24,7 +24,7 @@ import { Default as ButtonDefault } from '../components/fui-button/fui-button.st
   top: 0;
   right: 0;
   padding: var(--fui-space-md) var(--fui-space-lg);
-  background-color: var(--fui-color-background-subdued);
+  background-color: var(--fui-color-badge-neutral-bg);
   border-radius: 0 var(--fui-border-radius-sm) 0 var(--fui-border-radius-sm);
   font: var(--running-small-regular);
   color: var(--fui-color-foreground-default);
@@ -49,7 +49,7 @@ import { Default as ButtonDefault } from '../components/fui-button/fui-button.st
  `}
 </style>
 
-### Customizing Theme
+### Theming
 Theme FUI colors by overriding CSS variables.
 Make sure you are overriding the CSS variables only after importing FUI's styles.
 The variables operate on an inheritance model, ensuring a cohesive organizational structure. Overriding one variable will have consequences on other variables.
