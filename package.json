@@ -1,6 +1,6 @@
 {
   "name": "functional-ui-kit",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Functional UI Kit",
   "scripts": {
     "build": "vite build --config vite.config.ts",
