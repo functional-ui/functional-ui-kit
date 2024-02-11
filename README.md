@@ -17,7 +17,7 @@ Each Figma variable has a direct counterpart in CSS, so there's no confusion. Yo
 
 <ul>
   <li>Website: www.functional-ui-kit.com</li>
-  <li>Storybook: www.functional-ui.github.io/functional-ui-kit</li>
+  <li>Storybook: https://functional-ui.github.io/functional-ui-kit</li>
   <li>Github: www.github.com/functional-ui/functional-ui-kit</li>
   <li>Npm: www.npmjs.com/package/functional-ui-kit</li>
 </ul>
