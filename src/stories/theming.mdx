@@ -50,11 +50,17 @@ import { Default as ButtonDefault } from '../components/fui-button/fui-button.st
 </style>
 
 ### Theming
-Theme FUI colors by overriding CSS variables.
+Theme FUI colors, spacing, text & shape by overriding CSS variables.
 Make sure you are overriding the CSS variables only after importing FUI's styles.
 The variables operate on an inheritance model, ensuring a cohesive organizational structure. Overriding one variable will have consequences on other variables.
 
 We recommend concentrating on [Theme Color variables](https://github.com/functional-ui/functional-ui-kit/blob/main/src/css/theme-colors.css), [Global Color variables](https://github.com/functional-ui/functional-ui-kit/blob/main/src/css/global-colors.css) and [Layout variables](https://github.com/functional-ui/functional-ui-kit/blob/main/src/css/layout.css) for effective theming:
+
+Make sure you apply your style **after Funcional UI Kit's style**, otherwise your overrides will not take affect:
+```css
+import 'functional-ui-kit/style';
+import 'your-style';
+```
 ```css
 :root {
   --fui-color-badge-blue-bg: var(--fui-color-green-50);

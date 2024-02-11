@@ -2,11 +2,18 @@
 
 # Welcome to Functional UI Kit
 
-Functional UI Kit is a professionally crafted design system for product design and development teams and individuals. We provide core components you would need in every project, focusing on accessibility, development experience and unified designer-developer experience.
+Functional UI Kit is a professionally crafted design system for design & development teams and individuals. We provide core components you would need in every project, focusing on accessibility, development experience and unified designer-developer experience.
 
 We've made sure that Figma variables and CSS variables work together effortlessly. They share the same names, usage and inheritance structure. This isn't just an extra feature; it's the core approach.
 
 Each Figma variable has a direct counterpart in CSS, so there's no confusion. Your design ideas stay crystal clear as you move into the development phase.
+
+<ul>
+  <li>Website: www.functional-ui-kit.com</li>
+  <li>Storybook: www.functional-ui.github.io/functional-ui-kit</li>
+  <li>Github: www.github.com/functional-ui/functional-ui-kit</li>
+  <li>Npm: www.npmjs.com/package/functional-ui-kit</li>
+</ul>
 
 
 # Setup
