@@ -1,4 +1,8 @@
-<img width="100%" alt="functional-ui-kit-cover" src="https://github.com/functional-ui/functional-ui-kit/assets/10652039/fa34ae50-ae9b-4af7-bcce-ca5393f496f0">
+<img width="100%" alt="functional-ui-kit-cover" src="https://github.com/functional-ui/functional-ui-kit/assets/10652039/fa34ae50-ae9b-4af7-bcce-ca5393f496f0" style="border-radius: 8px">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white" />
 
 # Welcome to Functional UI Kit
 
