@@ -44,7 +44,7 @@ export const FuiToggle = (props: FuiToggleProps) => {
 
   return (
     <fieldset aria-label={props.ariaLabel} className={classNames}>
-      <div className={`${compPrefix}-active-bg`} style={{ width: `${activeTabWidth}px`, left: `${activeTabLeftLocation}px` }}/>
+      <div className={`${compPrefix}-active-bg`} style={{ width: `${activeTabWidth}px`, left: `${activeTabLeftLocation}px` }} />
       {props.options.map((option) => {
         const onChange = () => {
           if (props.disabled) return;

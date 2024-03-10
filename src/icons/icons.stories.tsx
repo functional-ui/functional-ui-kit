@@ -11,7 +11,7 @@ import FuiIconPlaceholder32X32 from './fui-icon-placeholder-32x32';
 import FuiIconX12x12 from './fui-icon-x-12x12';
 import FuiIconX8x8 from './fui-icon-x-8x8';
 import FuiIconX16x16 from './fui-icon-x-16x16';
-import FuiIconIntermediateLine2x10 from './fui-icon-intermediate-line-2x10';
+import FuiIconIndeterminateLine2x10 from './fui-icon-indeterminate-line-2x10';
 
 const meta = {
   title: ' Components/Icons'
@@ -31,4 +31,4 @@ export const Placeholder32X32: Story = { render: () => <FuiIconPlaceholder32X32/
 export const X8x8: Story = { render: () => <FuiIconX8x8/> };
 export const X12x12: Story = { render: () => <FuiIconX12x12/> };
 export const X16x16: Story = { render: () => <FuiIconX16x16/> };
-export const IntermediateLine2x10: Story = { render: () => <FuiIconIntermediateLine2x10/> };
+export const IndeterminateLine2x10: Story = { render: () => <FuiIconIndeterminateLine2x10/> };

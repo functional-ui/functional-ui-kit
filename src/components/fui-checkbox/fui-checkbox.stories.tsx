@@ -20,7 +20,7 @@ const meta = {
   },
   argTypes: {
     checked: { name: '🔗 checked' },
-    intermediate: { name: '🔗 intermediate' },
+    indeterminate: { name: '🔗 indeterminate' },
     disabled: { name: '🔗 disabled' },
     checkLabel: { name: '🔗 checkLabel' },
     className: {
@@ -63,10 +63,10 @@ export const Disabled: Story = {
       <div style={{ display: 'flex', gap: 'var(--fui-space-md)' }}>
         <FuiCheckbox {...args} disabled />
         <FuiCheckbox {...args} checked disabled />
-        <FuiCheckbox {...args} intermediate disabled />
+        <FuiCheckbox {...args} indeterminate disabled />
         <FuiCheckbox {...args} checkLabel='Label' disabled />
         <FuiCheckbox {...args} checkLabel='Label' checked disabled />
-        <FuiCheckbox {...args} checkLabel='Label' intermediate disabled />
+        <FuiCheckbox {...args} checkLabel='Label' indeterminate disabled />
       </div>
     );
   },
@@ -90,7 +90,7 @@ export const Disabled: Story = {
         disable: true
       }
     },
-    intermediate: {
+    indeterminate: {
       table: {
         disable: true
       }
@@ -98,7 +98,7 @@ export const Disabled: Story = {
   }
 };
 
-export const Intermediate: Story = {
+export const Indeterminate: Story = {
   render: (args) => {
     const [checked1, setChecked1] = React.useState<boolean>(true);
     const [checked2, setChecked2] = React.useState<boolean>(false);
@@ -115,7 +115,7 @@ export const Intermediate: Story = {
 
     return (
       <>
-        <FuiCheckbox {...args} checked={checked1 && checked2} intermediate={checked1 || checked2} onToggle={onToggleMaster} />
+        <FuiCheckbox {...args} checked={checked1 && checked2} indeterminate={checked1 || checked2} onToggle={onToggleMaster} />
         <div style={{ marginLeft: 'var(--fui-space-xxlg)', display: 'flex', flexDirection: 'column', gap: 'var(--fui-space-md)' }}>
           <FuiCheckbox {...args} checked={checked1} onToggle={setChecked1} />
           <FuiCheckbox {...args} checked={checked2} onToggle={setChecked2} />
@@ -131,7 +131,7 @@ export const Intermediate: Story = {
       url: 'https://www.figma.com/file/zHutj6e9DcPngHZTDtAL1u/Functional-UI-Kit?type=design&node-id=2461-15326'
     }
   },
-  name: 'Intermediate',
+  name: 'Indeterminate',
   argTypes: {
     disabled: {
       table: {
@@ -143,7 +143,7 @@ export const Intermediate: Story = {
         disable: true
       }
     },
-    intermediate: {
+    indeterminate: {
       table: {
         disable: true
       }
