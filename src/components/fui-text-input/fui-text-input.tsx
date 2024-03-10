@@ -25,6 +25,8 @@ export interface FuiTextInputProps {
 
 export const FuiTextInput = (props: FuiTextInputProps) => {
   const [isActive, setIsActive] = React.useState(false);
+  const inputId = React.useMemo(() => `${compPrefix}-input-${Math.random().toString(36).substring(7)}`, []);
+  const labelId = React.useMemo(() => `${compPrefix}-label-${Math.random().toString(36).substring(7)}`, []);
 
   const clearValue = React.useCallback(() => {
     props.onChange('');
@@ -40,14 +42,17 @@ export const FuiTextInput = (props: FuiTextInputProps) => {
     }
   );
 
+
   return (
     <div className={`${compPrefix}-wrapper ${props.className}`}>
-      {props.label ? <div className={`${compPrefix}-label`}>{props.label}</div> : null}
+      {props.label ? <label id={labelId} htmlFor={inputId} className={`${compPrefix}-label`}>{props.label}</label> : null}
       {props.status ? <FuiStatusMessage {...props.status} /> : null}
       <div className={`${compPrefix}-container ${props.disabled ? `${prefix}-disabled` : ''}`}>
         {props.prefix ? <div className={`${compPrefix}-prefix`}>{props.prefix}</div> : null}
         <div className={inputContainerClassNames}>
           <input
+            id={inputId}
+            aria-labelledby={labelId}
             aria-label={props.ariaLabel}
             type="text"
             value={props.value}

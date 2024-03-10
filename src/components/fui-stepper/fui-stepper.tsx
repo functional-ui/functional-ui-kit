@@ -25,6 +25,9 @@ export interface FuiStepperProps {
 }
 
 export const FuiStepper = (props: FuiStepperProps) => {
+  const inputId = React.useMemo(() => `${compPrefix}-input-${Math.random().toString(36).substring(7)}`, []);
+  const labelId = React.useMemo(() => `${compPrefix}-label-${Math.random().toString(36).substring(7)}`, []);
+
   const isIncDisabled = React.useMemo(() => {
     return props.disabled && [FuiStepperDisabled.All, FuiStepperDisabled.Plus].includes(props.disabled);
   }, [props.disabled]);
@@ -73,14 +76,14 @@ export const FuiStepper = (props: FuiStepperProps) => {
 
   return (
     <div className={classNames}>
-      {props.label && <div className={`${compPrefix}-label`}>{props.label}</div>}
+      {props.label && <label id={labelId} htmlFor={inputId} className={`${compPrefix}-label`}>{props.label}</label>}
       {props.status && <FuiStatusMessage {...props.status} />}
       <div className={`${compPrefix}-container`} style={containerStyle}>
         <button onClick={dec} className={minusButtonClassNames} disabled={isDecDisabled}>
           <FuiIconMinus12x12 />
         </button>
         <div className={valueContainerClassNames}>
-          <input type="number" className={`${compPrefix}-input`} value={props.value} onChange={(e) => { props.onChange(Number(e.target.value)); }} disabled={isAllDisabled} />
+          <input id={inputId} aria-labelledby={labelId} type="number" className={`${compPrefix}-input`} value={props.value} onChange={(e) => { props.onChange(Number(e.target.value)); }} disabled={isAllDisabled} />
         </div>
         <button onClick={inc} className={plusButtonClassNames} disabled={isIncDisabled}>
           <FuiIconPlus12x12 />
