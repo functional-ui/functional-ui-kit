@@ -2,6 +2,7 @@
   "name": "functional-ui-kit",
   "version": "1.0.0",
   "description": "Functional UI Kit",
+  "homepage": "https://functional-ui-kit.com/",
   "scripts": {
     "build": "vite build --config vite.config.ts",
     "dev": "npm run storybook",
