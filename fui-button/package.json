@@ -1,5 +1,4 @@
 {
   "main": "../dist/fui-button/index.js",
-  "module": "../dist/fui-button/index.mjs",
   "types": "../dist/fui-button/index.d.ts"
 }

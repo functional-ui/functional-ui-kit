@@ -1,5 +1,4 @@
 {
   "main": "../dist/fui-text-input/index.js",
-  "module": "../dist/fui-text-input/index.mjs",
   "types": "../dist/fui-text-input/index.d.ts"
 }
