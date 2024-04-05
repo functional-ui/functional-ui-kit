@@ -1,5 +1,4 @@
 {
   "main": "../dist/fui-radio/index.js",
-  "module": "../dist/fui-radio/index.mjs",
   "types": "../dist/fui-radio/index.d.ts"
 }

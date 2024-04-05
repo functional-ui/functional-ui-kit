@@ -1,5 +1,4 @@
 {
   "main": "../dist/fui-option-group/index.js",
-  "module": "../dist/fui-option-group/index.mjs",
   "types": "../dist/fui-option-group/index.d.ts"
 }
