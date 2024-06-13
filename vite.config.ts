@@ -41,7 +41,7 @@ export default defineConfig({
     include: 'src/components/*/*.{ts,tsx}',
     exclude: ['src/components/**/*.stories.{ts,tsx}'],
     beforeWriteFile: (filePath, content) => ({
-      filePath: filePath.replace(/fui-[a-z]+.d.ts/, 'index.d.ts').replace(/components\//, ''),
+      filePath: filePath.replace(/fui(-[a-z]+)+.d.ts/, 'index.d.ts').replace(/components\//, ''),
       content,
     }),
   })],
