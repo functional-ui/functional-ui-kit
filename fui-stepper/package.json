@@ -1,5 +1,4 @@
 {
   "main": "../dist/fui-stepper/index.js",
-  "module": "../dist/fui-stepper/index.mjs",
   "types": "../dist/fui-stepper/index.d.ts"
 }

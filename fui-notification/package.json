@@ -1,5 +1,4 @@
 {
   "main": "../dist/fui-notification/index.js",
-  "module": "../dist/fui-notification/index.mjs",
   "types": "../dist/fui-notification/index.d.ts"
 }

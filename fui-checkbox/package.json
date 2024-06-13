@@ -1,5 +1,4 @@
 {
   "main": "../dist/fui-checkbox/index.js",
-  "module": "../dist/fui-checkbox/index.mjs",
   "types": "../dist/fui-checkbox/index.d.ts"
 }

@@ -1,5 +1,4 @@
 {
   "main": "../dist/fui-popover/index.js",
-  "module": "../dist/fui-popover/index.mjs",
   "types": "../dist/fui-popover/index.d.ts"
 }

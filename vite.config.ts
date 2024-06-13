@@ -25,7 +25,16 @@ export default defineConfig({
         'fui-option-group': resolve(__dirname, 'src/components/fui-option-group/fui-option-group.tsx'),
       },
       fileName: '[name]/index',
-      formats: ['es', 'cjs'],
+      formats: ['cjs'],
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
     },
   },
   plugins: [dts({
